@@ -8,7 +8,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: hsl(273, 75%, 66%);
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat:round 
     font-family: Kumbh Sans;
 }
 
@@ -28,7 +29,7 @@ main{
     margin-left: -131px;
     top: -120px;
     height: 200px;
-    z-index: 20;
+    
 }
 
 .shadow{
@@ -62,6 +63,10 @@ h1{
     color: hsl(237, 12%, 33%);
 }
 
+.faq-title:hover{
+    color: orange;
+}
+
 .faq{
     font-size: 12px;
     padding: 0 50px 0 20px;
@@ -83,21 +88,14 @@ hr{
     border-color: hsl(240, 5%, 91%);
 }
 
-.collapse{
-    border: none;
-    position: relative;
-    top: -20px;
-    left: 135px;
-    background-color: transparent;
-    font-size: 9px;
-}
-
 @media (min-width: 500px){
     main{
         width: 50%;
         height: 50%;
         min-width: 700px;
-        max-width: 60%;
+        max-width: 40%;
+        display: flex;
+        flex-direction: row;
     }
 
     .image{
@@ -120,26 +118,54 @@ hr{
         top: 0;
         bottom: 0;
         margin: auto 0;
-        
     }
 
     h1{
+        text-align: left;
+        padding-left: 10px;
         margin-left: 8%;
         margin-top: 40px;
         margin-bottom: 40px;
+        font-family: Kumbh Sans;
     }
 
     .faq-title{
-        margin-left: 48%;
+        text-align: left;
+        font-family: Kumbh Sans;
     }
 
     hr{
-        margin: 0 20px 0 50%;
+        margin: 0 20px 0 50;
     }
 
     .faq{
-        margin-left: 48%;
-        overflow: hidden;
+        /* margin-left: 48%;         */
+        font-family: Kumbh Sans;
     }
 
+    .left-side{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .image-container{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .right-side{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .box-img{
+        position: absolute;
+        top: 40%;
+        left: -15%;
+    }
 }
