@@ -132,6 +132,7 @@ hr{
     .faq-title{
         text-align: left;
         font-family: Kumbh Sans;
+        cursor: pointer;
     }
 
     hr{
