@@ -164,7 +164,7 @@ hr{
     }
 
     .left-side{
-        background-image: url(/images/bg-pattern-desktop.svg);
+        background-image: url(images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-size: 200%;
         background-position:  -375px -160px;
